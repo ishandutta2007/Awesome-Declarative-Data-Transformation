@@ -66,93 +66,93 @@ The market exhibits a **moderately fragmented**, two-tiered dynamic:
 
 ## 🔓 Open-Source GitHub Projects
 
-*Sorted by GitHub Star Count in descending order:*
+*Sorted by GitHub Stars_Count in descending order:*
 
-1. ### 🦆 [DuckDB](https://github.com/duckdb/duckdb) [![GitHub stars](https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white)](https://github.com/duckdb/duckdb/stargazers)
+1. ### 🦆 [DuckDB](https://github.com/duckdb/duckdb) [![GitHub_Stars](https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white)](https://github.com/duckdb/duckdb/stargazers)
    - **Type**: Embedded Analytical In-Process SQL OLAP Engine (MIT License)
    - **Overview**: Fast, zero-dependency in-process SQL OLAP database management system. DuckDB excels at declarative local transformations, querying Parquet/Arrow/CSV files directly, and powering modern fast analytical pipeline testing and embedded transformation execution without cluster management overhead.
    - **Tech Stack**: C++, C, Python, SQL.
    - **Best For**: Fast local transformations, CI/CD pipeline runs, and serverless data modeling.
 
-2. ### ⚙️ [Prefect](https://github.com/PrefectHQ/prefect) [![GitHub stars](https://img.shields.io/github/stars/PrefectHQ/prefect?style=social&color=white)](https://github.com/PrefectHQ/prefect/stargazers)
+2. ### ⚙️ [Prefect](https://github.com/PrefectHQ/prefect) [![GitHub_Stars](https://img.shields.io/github/stars/PrefectHQ/prefect?style=social&color=white)](https://github.com/PrefectHQ/prefect/stargazers)
    - **Type**: Declarative Workflow Orchestration & Data Pipeline Engine (Apache 2.0)
    - **Overview**: Python-native workflow coordinator designed to build resilient, declarative data workflows. Features dynamic DAG generation, automatic state management, retries, concurrency controls, and seamless orchestration of dbt runs, Python transformations, and SQL models.
    - **Tech Stack**: Python.
    - **Best For**: Coordinating end-to-end data pipelines and declarative transformation triggers.
 
-3. ### 🧊 [Cube](https://github.com/cube-js/cube) [![GitHub stars](https://img.shields.io/github/stars/cube-js/cube?style=social&color=white)](https://github.com/cube-js/cube/stargazers)
+3. ### 🧊 [Cube](https://github.com/cube-js/cube) [![GitHub_Stars](https://img.shields.io/github/stars/cube-js/cube?style=social&color=white)](https://github.com/cube-js/cube/stargazers)
    - **Type**: Declarative Semantic Layer & Universal Data Modeling Engine (Apache 2.0)
    - **Overview**: Universal semantic modeling platform that organizes raw warehouse data into governed metrics, dimensions, and relationships. It features pre-aggregations (declarative caching and materialization), role-based access control, and SQL/REST/GraphQL APIs for consistent downstream metric delivery.
    - **Tech Stack**: Rust, TypeScript.
    - **Best For**: Upstream semantic transformations, metric modeling, and cached aggregations.
 
-4. ### 🦁 [Dagster](https://github.com/dagster-io/dagster) [![GitHub stars](https://img.shields.io/github/stars/dagster-io/dagster?style=social&color=white)](https://github.com/dagster-io/dagster/stargazers)
+4. ### 🦁 [Dagster](https://github.com/dagster-io/dagster) [![GitHub_Stars](https://img.shields.io/github/stars/dagster-io/dagster?style=social&color=white)](https://github.com/dagster-io/dagster/stargazers)
    - **Type**: Software-Defined Asset & Declarative Orchestration Framework (Apache 2.0)
    - **Overview**: Pioneered the **Software-Defined Asset (SDA)** declarative approach: rather than imperatively executing tasks, developers declare what data assets should exist and their upstream dependencies. Dagster tracks partition lineage, asset observations, and natively integrates with dbt Core.
    - **Tech Stack**: Python, TypeScript.
    - **Best For**: Declarative asset-based data platform engineering and multi-tool orchestration.
 
-5. ### 📦 [dbt Core](https://github.com/dbt-labs/dbt-core) [![GitHub stars](https://img.shields.io/github/stars/dbt-labs/dbt-core?style=social&color=white)](https://github.com/dbt-labs/dbt-core/stargazers)
+5. ### 📦 [dbt Core](https://github.com/dbt-labs/dbt-core) [![GitHub_Stars](https://img.shields.io/github/stars/dbt-labs/dbt-core?style=social&color=white)](https://github.com/dbt-labs/dbt-core/stargazers)
    - **Type**: SQL-Based Transformation & Modeling Framework (Apache 2.0)
    - **Overview**: The industry de facto standard for declarative SQL modeling in cloud data warehouses. Analytics engineers declare `SELECT` models and schema contracts; dbt constructs the dependency DAG, manages materialization strategies (views, tables, incrementals, snapshots), and performs integrated automated data testing.
    - **Tech Stack**: Python, SQL, Jinja.
    - **Best For**: Analytics engineering teams standardizing ELT workflows in Snowflake, BigQuery, Redshift, and Databricks.
 
-6. ### 🧪 [Great Expectations](https://github.com/great-expectations/great_expectations) [![GitHub stars](https://img.shields.io/github/stars/great-expectations/great_expectations?style=social&color=white)](https://github.com/great-expectations/great_expectations/stargazers)
+6. ### 🧪 [Great Expectations](https://github.com/great-expectations/great_expectations) [![GitHub_Stars](https://img.shields.io/github/stars/great-expectations/great_expectations?style=social&color=white)](https://github.com/great-expectations/great_expectations/stargazers)
    - **Type**: Declarative Data Testing, Profiling & Quality Assertion Engine (Apache 2.0)
    - **Overview**: Leading framework for declarative data quality. Defines data integrity constraints as human-readable "Expectations" that execute natively during transformation pipelines to catch schema drift, nulls, invalid ranges, and anomaly regressions before bad data lands downstream.
    - **Tech Stack**: Python.
    - **Best For**: Declarative pipeline data validation and automated documentation.
 
-7. ### 📜 [PRQL](https://github.com/PRQL/prql) [![GitHub stars](https://img.shields.io/github/stars/PRQL/prql?style=social&color=white)](https://github.com/PRQL/prql/stargazers)
+7. ### 📜 [PRQL](https://github.com/PRQL/prql) [![GitHub_Stars](https://img.shields.io/github/stars/PRQL/prql?style=social&color=white)](https://github.com/PRQL/prql/stargazers)
    - **Type**: Pipelined Relational Query Language & Transpiler (Apache 2.0)
    - **Overview**: PRQL (Pipelined Relational Query Language) is an elegant, modern declarative query language that compiles directly down to SQL. Unlike nested SQL queries, PRQL uses sequential data pipelines (`from table | filter x | derive y | aggregate z`), bringing clarity and maintainability to complex analytical transformations.
    - **Tech Stack**: Rust.
    - **Best For**: Developers seeking an intuitive, pipelined alternative to verbose raw SQL.
 
-8. ### 🧹 [SQLFluff](https://github.com/sqlfluff/sqlfluff) [![GitHub stars](https://img.shields.io/github/stars/sqlfluff/sqlfluff?style=social&color=white)](https://github.com/sqlfluff/sqlfluff/stargazers)
+8. ### 🧹 [SQLFluff](https://github.com/sqlfluff/sqlfluff) [![GitHub_Stars](https://img.shields.io/github/stars/sqlfluff/sqlfluff?style=social&color=white)](https://github.com/sqlfluff/sqlfluff/stargazers)
    - **Type**: Declarative SQL Linter, Formatter & Dialect Validator (MIT License)
    - **Overview**: Dialect-flexible, modular linter and auto-formatter for SQL and Jinja-templated dbt code. Enforces declarative code style, structural consistency, and best practices across multi-contributor analytics engineering repositories.
    - **Tech Stack**: Python.
    - **Best For**: CI/CD automated linting and code quality in SQL modeling teams.
 
-9. ### 🌐 [SQLGlot](https://github.com/tobymao/sqlglot) [![GitHub stars](https://img.shields.io/github/stars/tobymao/sqlglot?style=social&color=white)](https://github.com/tobymao/sqlglot/stargazers)
+9. ### 🌐 [SQLGlot](https://github.com/tobymao/sqlglot) [![GitHub_Stars](https://img.shields.io/github/stars/tobymao/sqlglot?style=social&color=white)](https://github.com/tobymao/sqlglot/stargazers)
    - **Type**: SQL Parser, Transpiler, Semantic Analyzer & Optimizer (MIT License)
    - **Overview**: Robust SQL parser and transpiler supporting over 20 dialect variants. Serves as the core engine powering modern declarative frameworks like SQLMesh, enabling cross-dialect model translation, AST validation, schema resolution, and semantic optimization.
    - **Tech Stack**: Python.
    - **Best For**: Multi-dialect SQL parsing, transpilation, and building custom query compilers.
 
-10. ### ⚡ [Apache Arrow DataFusion](https://github.com/apache/arrow-datafusion) [![GitHub stars](https://img.shields.io/github/stars/apache/arrow-datafusion?style=social&color=white)](https://github.com/apache/arrow-datafusion/stargazers)
+10. ### ⚡ [Apache Arrow DataFusion](https://github.com/apache/arrow-datafusion) [![GitHub_Stars](https://img.shields.io/github/stars/apache/arrow-datafusion?style=social&color=white)](https://github.com/apache/arrow-datafusion/stargazers)
     - **Type**: Extensible Declarative SQL Query Engine & Compute Framework (Apache 2.0)
     - **Overview**: In-memory query engine written in Rust that leverages Apache Arrow memory format. Designed for building customized high-performance data transformation engines, DataFrame systems, and distributed declarative data processing tools.
     - **Tech Stack**: Rust, Arrow.
     - **Best For**: Developers and systems engineers building custom query engines and transformation runtimes.
 
-11. ### 📊 [Evidence](https://github.com/evidence-dev/evidence) [![GitHub stars](https://img.shields.io/github/stars/evidence-dev/evidence?style=social&color=white)](https://github.com/evidence-dev/evidence/stargazers)
+11. ### 📊 [Evidence](https://github.com/evidence-dev/evidence) [![GitHub_Stars](https://img.shields.io/github/stars/evidence-dev/evidence?style=social&color=white)](https://github.com/evidence-dev/evidence/stargazers)
     - **Type**: Code-Driven Declarative Business Intelligence & Reporting (MIT License)
     - **Overview**: Generates fast, interactive analytical reports directly from markdown and SQL queries. Pairs with declarative transformation models by turning version-controlled SQL statements into fully rendered web-based data products and dashboards.
     - **Tech Stack**: Svelte, JavaScript, SQL.
     - **Best For**: Code-first analytical reporting and automated BI publishing from SQL models.
 
-12. ### 🦩 [Ibis](https://github.com/ibis-project/ibis) [![GitHub stars](https://img.shields.io/github/stars/ibis-project/ibis?style=social&color=white)](https://github.com/ibis-project/ibis/stargazers)
+12. ### 🦩 [Ibis](https://github.com/ibis-project/ibis) [![GitHub_Stars](https://img.shields.io/github/stars/ibis-project/ibis?style=social&color=white)](https://github.com/ibis-project/ibis/stargazers)
     - **Type**: Portable Python DataFrame Framework for SQL Engines (Apache 2.0)
     - **Overview**: Standardizes data manipulation across 20+ query backends (DuckDB, Snowflake, BigQuery, ClickHouse, Postgres, Polars) through a single declarative Python DataFrame interface. Writes Python code that executes as optimized native SQL queries in the target backend.
     - **Tech Stack**: Python.
     - **Best For**: Pythonistas wanting write-once, run-anywhere analytics without writing dialect-specific SQL.
 
-13. ### ⚔️ [SQLMesh](https://github.com/TobikoData/sqlmesh) [![GitHub stars](https://img.shields.io/github/stars/TobikoData/sqlmesh?style=social&color=white)](https://github.com/TobikoData/sqlmesh/stargazers)
+13. ### ⚔️ [SQLMesh](https://github.com/TobikoData/sqlmesh) [![GitHub_Stars](https://img.shields.io/github/stars/TobikoData/sqlmesh?style=social&color=white)](https://github.com/TobikoData/sqlmesh/stargazers)
     - **Type**: Next-Generation Declarative Transformation & Virtual Data Environments (Apache 2.0)
     - **Overview**: Comprehensive challenger to dbt Core. Introduces **Virtual Data Environments** that let teams test and validate data models in isolated virtual environments without copying data or duplicating warehouse compute. Features column-level lineage, automated incremental categorization, semantic change detection, and native multi-dialect transpilation via SQLGlot.
     - **Tech Stack**: Python, SQL, Rust.
     - **Best For**: Teams needing true zero-copy dev/staging environments, instant plan audits, and column-level impact analysis.
 
-14. ### 🔗 [Splink](https://github.com/moj-analytical-services/splink) [![GitHub stars](https://img.shields.io/github/stars/moj-analytical-services/splink?style=social&color=white)](https://github.com/moj-analytical-services/splink/stargazers)
+14. ### 🔗 [Splink](https://github.com/moj-analytical-services/splink) [![GitHub_Stars](https://img.shields.io/github/stars/moj-analytical-services/splink?style=social&color=white)](https://github.com/moj-analytical-services/splink/stargazers)
     - **Type**: Declarative Fast Probabilistic Record Linkage & Deduplication (MIT License)
     - **Overview**: Declarative probabilistic record linkage framework developed by the UK Ministry of Justice. Defines fuzzy matching rules and probabilistic linkage models that push down directly into DuckDB, Spark, AWS Athena, or Postgres for high-volume deduplication without machine learning black boxes.
     - **Tech Stack**: Python, SQL.
     - **Best For**: Declarative entity resolution, record linkage, and customer deduplication pipelines.
 
-15. ### 🛠️ [Dataform (Open Source)](https://github.com/dataform-co/dataform) [![GitHub stars](https://img.shields.io/github/stars/dataform-co/dataform?style=social&color=white)](https://github.com/dataform-co/dataform/stargazers)
+15. ### 🛠️ [Dataform (Open Source)](https://github.com/dataform-co/dataform) [![GitHub_Stars](https://img.shields.io/github/stars/dataform-co/dataform?style=social&color=white)](https://github.com/dataform-co/dataform/stargazers)
     - **Type**: SQL-Based Declarative Data Modeling Core (Apache 2.0)
     - **Overview**: The open-source CLI and compilation framework underlying Google Cloud Dataform. Enables developers to organize SQL queries into dependency trees using `.sqlx` files, declare automated assertions, and materialize incremental tables in BigQuery.
     - **Tech Stack**: TypeScript, JavaScript.
