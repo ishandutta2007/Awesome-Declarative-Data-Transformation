@@ -32,73 +32,29 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global data integration and declarative transformation sector is estimated at approximately **$16.0B to $19.1B** (2024–2025), expanding at a 12–14% CAGR fueled by cloud analytics and generative AI pipeline demands. The market exhibits a **moderately fragmented**, two-tiered dynamic: hyperscalers and mega-cap platform providers (Google, Databricks, Snowflake) dominate enterprise core infrastructure, while agile, specialized transformation layers (dbt Labs, Fivetran, Coalesce, Materialize) compete aggressively for best-of-breed developer and analytics engineering workloads.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[dbt Cloud](https://www.getdbt.com/)**
-
-  **Managed dbt platform** with IDE, scheduler, and CI. **Pricing**: **Developer (free)** for 1 seat with **3,000 successful models/month**; **Starter $100/seat/month** with 5 seats and **15,000 models/month**; Enterprise/Enterprise+ quote-only with 100,000 models and custom seats . **Free tier**: Yes, 1 developer seat with 3,000 models. **Best for**: teams wanting the dbt ecosystem without self-hosting—**trade-off**: seat costs escalate quickly; initial Enterprise quotes are often 20–40% above final negotiated prices .
-
-
-
-- **[Coalesce.io](https://coalesce.io/)**
-
-  **Visual data transformation platform** with column-aware SQL generation. **Pricing**: **Developer (free)** for 1 user with **2,000 actions/month**; **Starter $150/user/month** (annual) for up to 4 transform users with **15,000 actions/month**; Enterprise custom with 100,000 actions . **Free tier**: Yes, 1 user with 2,000 actions. **Best for**: teams wanting a visual canvas over Snowflake, Databricks, or BigQuery—**trade-off**: action-based metering; Starter caps at 4 users, forcing Enterprise for larger teams .
-
-
-
-- **[Snowflake Dynamic Tables](https://www.snowflake.com/)**
-
-  **Declarative materialized views** with automatic refresh. **Pricing**: Included with Snowflake credits; **Cloud Services costs scale with active tables and target lag**—a pipeline of 200 tables at 1-minute lag generates ~288,000 change-detection checks daily, potentially exceeding the 10% billing threshold . **Free tier**: Trial credits. **Best for**: Snowflake customers wanting declarative pipelines without external tooling—**trade-off**: short target lag amplifies Cloud Services costs; suspended tables still incur storage fees .
-
-
-
-- **[Materialize](https://materialize.com/)**
-
-  **Streaming SQL database** for real-time transformation. **Pricing**: **Cloud On-Demand $1.50/compute credit**; **Cloud Capacity** annual prepaid with volume discounts; **Community License free forever** up to **24 GiB memory and 48 GiB disk** . **Free tier**: Yes, self-managed Community up to 24 GiB. **Best for**: teams needing sub-second freshness on streaming data—**trade-off**: compute credits at $1.50/hour add up for always-on clusters .
-
-
-
-- **[Prophecy.io](https://www.prophecy.ai/)**
-
-  **AI-powered data transformation** with visual and code interfaces. **Pricing**: **Starter (free)** with **20 credits/month**; **Professional $150/user/month** with 50 credits; **Enterprise Express $4,000/month** for up to 20 users . **Free tier**: Yes, 20 credits/month. **Best for**: teams wanting AI-assisted pipeline development with Alteryx/Informatica migration—**trade-off**: credit-based AI usage; Enterprise Express at $48K/year is the realistic entry for teams .
-
-
-
-- **[Dataform](https://cloud.google.com/dataform)**
-
-  **SQL-based transformation in BigQuery**. **Pricing**: **No license fee**—you pay only for BigQuery compute (**$6.25/TiB on-demand, first 1 TiB free**) and storage (**~$0.023/GiB-month**) . **Free tier**: Yes, 1 TiB BigQuery queries/month. **Best for**: BigQuery-native teams wanting free transformation tooling—**trade-off**: BigQuery-only; no multi-warehouse support .
-
-
-
-- **[Matillion](https://www.matillion.com/)**
-
-  **Low-code ETL/ELT** with in-warehouse transformation. **Pricing**: **Credit-based** (~$2/credit per third-party listings); **no public list pricing**—Vendr negotiates 15–25% multi-year discounts . **Free tier**: Trial only. **Best for**: teams doing heavy in-warehouse transformation—**trade-off**: always-on CDC bills by the clock; warehouse compute is a second bill .
-
-
-
-- **[Fivetran Transformations](https://www.fivetran.com/)**
-
-  **dbt Core and Quickstart models** within Fivetran. **Pricing**: **First 5,000 successful model runs/month free**; then **$0.01/run (5K–30K)**, **$0.007/run (30K–100K)**, **$0.002/run (100K+)** . **Free tier**: Yes, 5,000 model runs/month. **Best for**: Fivetran customers wanting bundled transformation—**trade-off**: third-party orchestrations (dbt Cloud, Coalesce) are free—you pay only for Fivetran-hosted models .
-
-
-
-- **[Databricks Delta Live Tables](https://www.databricks.com/)**
-
-  **Declarative pipeline framework** with expectations. **Pricing**: **DBU premium by edition**—CORE (lowest), PRO (adds CDC), ADVANCED (adds quality expectations); paying for ADVANCED without EXPECT clauses is a silent leak . **Free tier**: Community Edition limited. **Best for**: Databricks customers wanting declarative pipelines with data quality—**trade-off**: edition mismatch wastes premium; serverless background features bill at $0.70–$0.95/DBU vs classic $0.40–$0.55 .
-
-
+| Platform | Company Valuation / Revenue | Starting Pricing Tier | Free Tier / Trial Limits | Description & Key Trade-offs |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Dataform](https://cloud.google.com/dataform)** (Google Cloud / Alphabet) | **~$2.0T+ Market Cap** (~$350B+ Revenue) | **$6.25 per TB** (On-demand BigQuery queries; $0.02/GB storage; $0 Dataform service fee) | **Free Forever**: 1 TB queries/month & 10 GB storage free via BigQuery Always Free tier (Plus $300 new GCP account 90-day trial) | SQL-based transformation native to BigQuery with no license fee. **Trade-off**: BigQuery-only; no native multi-cloud or multi-warehouse support. |
+| **[Databricks Delta Live Tables](https://www.databricks.com/)** | **$62B–$134B Valuation** (~$3.7B–$4.8B ARR) | **$0.20 to $0.54 per DBU** (Serverless/Classic Core compute rates) | **Free Forever**: Free Edition (1 serverless workspace, 1 small 2X-Small warehouse, daily fair-use quota); **Free Trial**: 14 days with $400 credits | Declarative pipeline framework with streaming and expectations. **Trade-off**: ADVANCED tier pricing wastes DBUs without EXPECT clauses; compute bills scale with cluster sizing. |
+| **[Snowflake Dynamic Tables](https://www.snowflake.com/)** | **$45B–$65B Market Cap** (~$3.6B Revenue) | **$2.00 per credit** (Standard Edition virtual warehouse compute rate) | **Free Trial**: 30 days with $400 free credits across virtual warehouse compute and storage | Declarative materialized tables with automated refresh. **Trade-off**: High-frequency target lags incur substantial Cloud Services metadata inspection overheads. |
+| **[Fivetran Transformations](https://www.fivetran.com/)** | **$5.6B Valuation** (~$300M+ ARR) | **$0.01 per run** (Tiered from 5,001–30,000 runs; scales down to $0.002/run over 100k runs) | **Free Forever**: Up to 5,000 model runs/month and 500,000 MAR; **Free Trial**: 14 days with unlimited trial syncs & runs | Integrated dbt Core and Quickstart models within managed Fivetran pipelines. **Trade-off**: Optimized primarily for Fivetran connector syncs; large-scale transformations bill per run. |
+| **[dbt Cloud](https://www.getdbt.com/)** | **$4.2B Valuation** (~$100M+ ARR) | **$100 per seat/month** (Starter tier, up to 5 seats, includes 15,000 models/month) | **Free Forever**: 1 developer seat with up to 3,000 successful model builds/month; **Free Trial**: 14-day Starter trial | De facto standard managed dbt environment with integrated IDE, scheduler, and semantic layer. **Trade-off**: Seat and model overage costs escalate quickly for scaling teams. |
+| **[Matillion](https://www.matillion.com/)** | **$1.5B Valuation** (~$77M–$99M Revenue) | **$2.00 to $2.50 per credit** (Data Productivity Cloud Teams plan starts at ~$20,000/year) | **Free Trial**: 14 days with 500 complimentary Matillion credits | Low-code/visual push-down ETL and in-warehouse transformation platform. **Trade-off**: Cloud data warehouse compute is billed separately on top of Matillion credits. |
+| **[Coalesce.io](https://coalesce.io/)** | **$80M–$120M+ Valuation** (~$15M–$25M ARR) | **$150 per user/month** (Starter tier billed annually, up to 4 users, includes 15,000 actions/month) | **Free Forever**: Developer tier with 1 user, 1 project, and 2,000 actions/month; **Free Trial**: 30-day partner/enterprise trial | Column-aware visual transformation canvas built specifically for Snowflake, BigQuery, and Databricks. **Trade-off**: Starter plan caps at 4 transform users; 5+ builders require custom Enterprise. |
+| **[Materialize](https://materialize.com/)** | **~$177M Valuation** (~$10M–$15M ARR) | **$1.50 per compute credit** (Cloud On-Demand tier) | **Free Forever**: Self-managed Community License up to 24 GiB RAM and 48 GiB disk; **Free Trial**: 7-day full cloud trial | Real-time streaming SQL database computing incremental materialized views. **Trade-off**: Continuous compute credit charges can accumulate quickly for 24/7 streaming clusters. |
+| **[Prophecy.io](https://www.prophecy.ai/)** | **~$70M–$100M Valuation** (~$10M–$30M ARR) | **$150 per user/month** (Professional tier with 50 credits/month; Enterprise Express starts at $4,000/month) | **Free Forever**: Starter edition with 20 credits/month (runs on embedded DuckDB, managed Git) | Visual low-code transformation generating native Spark and SQL code with generative AI agents. **Trade-off**: Credit-based execution limits; multi-engine team deployments require Enterprise tiers. |
 
 ## Open-Source GitHub Projects
 
